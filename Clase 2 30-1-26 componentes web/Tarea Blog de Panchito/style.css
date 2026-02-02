@@ -50,7 +50,7 @@ body {
     border-radius: 18px;
     border: 2px solid #8b5e3c;
 
-    outline: 3px dashed #ff8409;
+    outline: 3px solid #ff8409;
     
     outline-offset: 6px;
 
@@ -79,6 +79,10 @@ body {
     font-style: italic;
 }
 
+.post {
+    background-color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
 
 
 /* Estilos para el post 1 */
