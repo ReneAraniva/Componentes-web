@@ -1,0 +1,118 @@
+/* Selector universal */
+* {
+    /*Incluye padding y border dentro del width y height*/
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #e6e6e6;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Contenedor del blog */
+.container {
+    width: 50%;
+    margin: 20px auto 40px auto;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #f9f9f9;
+
+    border-radius: 20px;
+    border: 2px solid #ccc;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+}
+
+/* Estilos para los posts */
+.post,
+.post1,
+.post2 {
+
+    /*Ancho fijo de la targeta*/
+    width: 600px;
+    /*Espacio interno*/
+    padding: 24px;
+    /*Borde real del elemento*/
+    margin-top: 20px;
+    /*Contorno externo que no afecta ni ocupa estapacio al tama;o de la targeta*/
+    margin-bottom: 40px;
+    /* Alto minimo de la targeta*/
+    min-height: 200px;
+    /* maximo del alto*/
+    max-height: 100%;  
+    border-radius: 18px;
+    border: 2px solid #8b5e3c;
+
+    outline: 3px dashed #ff8409;
+    
+    outline-offset: 6px;
+
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto al pasar el mouse */
+.post:hover,
+.post1:hover,
+.post2:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Estilos para las notas */
+.nota {
+    margin-top: 20px;
+    padding: 18px;
+
+    background-color: #fff3cd;
+    border-left: 6px solid #e2ae12;
+    border-radius: 12px;
+
+    font-style: italic;
+}
+
+
+
+/* Estilos para el post 1 */
+.post1 {
+    background-color: #e0f7fa;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.post1 h1 {
+    background-color: #a7ffeb;
+    border: 2px solid #8b5e3c;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+.post1 .nota {
+    background-color: #d1c4e9;
+    border-left: 6px solid #7e57c2;
+}
+
+/* Estilos para el post 2 */
+.post2 {
+    background-color: #f8e4e4;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.post2 h1 {
+    background-color: #ffb3b3;
+    border: 2px solid #8b5e3c;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+.post2 .nota {
+    background-color: #a7c37a;
+    border-left: 6px solid #3bcc0f;
+}
